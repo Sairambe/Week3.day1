@@ -1,0 +1,62 @@
+package week3.day1;
+
+public class Student extends Departnment {
+	
+	public String studentName()
+	{
+		return "Sairam B";
+	}
+	
+	public void studentDept()
+	{
+		System.out.println("Student Department is Computer Science");
+	}
+	
+	public void studentid() {
+		System.out.println("Student id is 111");		
+	}
+	
+	public int getStudentInfo(int id)
+	{
+		System.out.println("student id alone - overloaded" + id);
+		return 123;
+	}
+		
+	public void getStudentInfo(int id, String name) {
+		
+		System.out.println("Student id and name - overloaded" + id + name);
+		
+	}
+	
+	public void getStudentInfo(String email, long phonenumber)
+	{
+		System.out.println("Studend email and phone number - overloaded" + email + phonenumber);
+	}
+	public static void main(String[] args) {
+		
+		Student studobj = new Student();
+		
+		// College Details 
+				studobj.collegeName();
+				studobj.collegeRank();
+				studobj.code();
+				
+		// Department Details
+				studobj.departmentName();
+				
+	 // Student Details
+				studobj.studentName();
+				studobj.studentid();
+				studobj.studentDept();
+				
+	 //Student details overload method
+				studobj.getStudentInfo(123);
+				studobj.getStudentInfo(321, "Rocky Bhaai");
+				studobj.getStudentInfo("sairamtherock@gmail.com", 9840813);
+				
+				
+		
+
+	}
+
+}
