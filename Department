@@ -1,0 +1,11 @@
+package week3.day1;
+
+public class Departnment extends College{
+
+	public void departmentName()
+	{
+		
+  System.out.println("Department name is Computer Science");
+	}
+
+}
