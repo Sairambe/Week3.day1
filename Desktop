@@ -1,0 +1,17 @@
+package week3.day1;
+
+public class Desktop extends Computer {
+
+	public void desktopInch()
+	{
+		System.out.println("Desktop inch is 23");
+		}
+	
+	public static void main(String[] args)
+	{
+		Desktop dsk = new Desktop();
+		dsk.desktopInch();
+		dsk.computerModal();
+	}
+}
+
