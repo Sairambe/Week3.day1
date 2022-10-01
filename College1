@@ -1,0 +1,21 @@
+package week3.day1;
+
+public class College {
+
+	public String collegeName() 
+	{
+		
+		return "Velammal Engineering College";
+
+	}
+
+	public int code()
+	{
+		return 1234;
+	}
+	
+	public void collegeRank()
+	{
+		System.out.println("1st Rank");
+	}
+}
